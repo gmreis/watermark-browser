@@ -26,11 +26,11 @@ function getToRender () {
 function renderOneLine(name, fontName, imageQuerySelector) {
     const imageElement = document.querySelector(imageQuerySelector);
     if (imageElement) {
-        Jimp.read('/img/unnamed.png')
+        Jimp.read('dist/img/unnamed.png')
         // Jimp.read('/img/untitled.png')
             .then(async unnamed => {
-                const nameFont = await Jimp.loadFont('/fonts/lato-italic/'+fontName+'.fnt')
-                const rankFont = await Jimp.loadFont('/fonts/lato-italic/lato-italic-12.fnt')
+                const nameFont = await Jimp.loadFont('dist/fonts/lato-italic/'+fontName+'.fnt')
+                const rankFont = await Jimp.loadFont('dist/fonts/lato-italic/lato-italic-12.fnt')
 
                 // console.log('measureText name', Jimp.measureText(nameFont, name))
                 // console.log('measureTextHeight name', Jimp.measureTextHeight(nameFont, name))
@@ -76,11 +76,11 @@ function renderOneLine(name, fontName, imageQuerySelector) {
 function renderTwoLine(firstLine, lastLine, fontName, imageQuerySelector) {
     const imageElement = document.querySelector(imageQuerySelector);
     if (imageElement) {
-        Jimp.read('/img/unnamed.png')
+        Jimp.read('dist/img/unnamed.png')
         // Jimp.read('/img/untitled.png')
             .then(async unnamed => {
-                const nameFont = await Jimp.loadFont('/fonts/lato-italic/'+fontName+'.fnt')
-                const rankFont = await Jimp.loadFont('/fonts/lato-italic/lato-italic-12.fnt')
+                const nameFont = await Jimp.loadFont('dist/fonts/lato-italic/'+fontName+'.fnt')
+                const rankFont = await Jimp.loadFont('dist/fonts/lato-italic/lato-italic-12.fnt')
 
                 // console.log('measureText name', Jimp.measureText(nameFont, name))
                 // console.log('measureTextHeight name', Jimp.measureTextHeight(nameFont, name))
